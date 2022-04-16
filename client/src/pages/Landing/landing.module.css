@@ -1,0 +1,13 @@
+.bg{
+    background-image: url('../../assets/landing_1360x663.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: initial;
+    width: 100vw;
+    height: 100vh;
+    margin-bottom: 0px;
+    text-align: center;
+    position: absolute;
+    margin-top: 0px;
+}
