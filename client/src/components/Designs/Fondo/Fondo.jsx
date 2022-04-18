@@ -1,6 +1,11 @@
-import * as React from "react"
-import Muñequita from "../Muñequita"
-import styles from "./fondo.module.css"
+import * as React from "react";
+import Muñequita from "../Muñequita";
+import styles from "./fondo.module.css";
+import Nube from "./../Nube";
+import Hoja1 from "./../Hoja1";
+import Hoja2 from "./../Hoja2";
+/* import Title from "./../Title"; */
+import Title from "../../../assets/título.svg"
 
 const Fondo = (props) => (
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1366 663" {...props}>
@@ -98,9 +103,15 @@ const Fondo = (props) => (
         />
       </g>
     </g>
-    <Muñequita  viewBox="0 0 470 534"/>
-   
+    {/* <Nube />
+    <Muñequita viewBox="0 0 470 534" />
+    <Hoja1 width="100px"/>
+    <Hoja2 width="100px"/> */}
+ {/*    <Title width="100px"/> */}
+ <div className={styles.title}>
+    <img src={Title} alt=""/>
+    </div>
   </svg>
-)
+);
 
-export default Fondo
+export default Fondo;
