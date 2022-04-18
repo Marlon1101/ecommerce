@@ -7,9 +7,9 @@ import Typography from "@mui/material/Typography";
 import FavoriteIcon from "@mui/icons-material/Favorite";
 
 
-export default function Cards({ img, title }) {
+export default function Cards({ img, title,price }) {
   return (
-    <Card sx={{ maxWidth: 260, padding: "0.8em" }}>
+    <Card sx={{ width: 250, padding: "0.8em", margin:"2em"}}>
       <IconButton aria-label="add to favorites">
         <FavoriteIcon color="error" />
       </IconButton>
@@ -19,9 +19,9 @@ export default function Cards({ img, title }) {
           sx={{ color: "#49A47A", fontSize: "1.5em", marginBottom: "0.5em" }}
         >
           {" "}
-          <strong> $400</strong>{" "}
+          <strong> {price} </strong>{" "}
         </Typography>
-        <Typography variant="body1">
+        <Typography variant="body1" sx={{fontFamily:"Merienda"}}>
           <strong>{title}</strong>
         </Typography>
       </CardContent>
