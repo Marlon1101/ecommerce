@@ -143,19 +143,13 @@ export default function PrimarySearchAppBar() {
       >
         <Toolbar>
           <img src="https://i.imgur.com/ixy18OE.png" alt="404" width="40px" />
-          <Stack direction="row" spacing={2}>
-          <Button >
-            <Typography sx={{ color: "#306f53", marginLeft:"1em"}}>
-              <strong> About</strong>
+      <Box sx={{display:"flex", marginLeft:"40%"}}>
+      <Button >
+            <Typography  sx={{ color: "#fff", fontSize:"1.5em", fontFamily:"Amaranth"}}>
+              <strong> Productos</strong>
             </Typography>
           </Button>
-          <Button >
-            <Typography sx={{ color: "#306f53"}}>
-              <strong> Products</strong>
-            </Typography>
-          </Button>
-      
-    </Stack>
+      </Box>
           
           <Box sx={{ flexGrow: 1 }} />
           <Search>
@@ -163,14 +157,13 @@ export default function PrimarySearchAppBar() {
               <SearchIcon />
             </SearchIconWrapper>
             <StyledInputBase
-              placeholder="Search…"
+              placeholder="Buscar..."
               inputProps={{ "aria-label": "search" }}
             />
           </Search>
           <Box sx={{ display: { xs: "none", md: "flex" } }}>
             <IconButton
               size="large"
-              aria-label="show 4 new mails"
               color="inherit"
             >
               <ShoppingCartIcon />

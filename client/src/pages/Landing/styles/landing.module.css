@@ -2,12 +2,14 @@
     background-image: url("../../../assets/landing_final.svg");
     background-size: cover;
     background-repeat: no-repeat;
-    background-attachment: fixed;
-    display: flex;
-    align-items: center;
-
+    background-attachment: initial;
+    background-position:  left 80% ;
     width: 100vw;
     height: 100vh;
-    overflow-x: hidden;
-    overflow-y: hidden;
+    display: flex;
+    /* align-items:center; */
+    flex-direction: column;
+    justify-content: center;
+    /* overflow-x: hidden;
+    overflow-y: hidden; */
 }
