@@ -13,3 +13,19 @@
     /* overflow-x: hidden;
     overflow-y: hidden; */
 }
+
+.flecha:hover{
+    animation-duration: 1s;
+    animation-name: girarFlecha;
+}
+
+@keyframes girarFlecha{
+    from {
+        transform: rotate(0deg)
+        
+      }
+    
+      to {
+        transform: rotate(360deg)
+      }
+}

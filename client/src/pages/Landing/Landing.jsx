@@ -25,7 +25,7 @@ export default function Landing() {
           <strong> Reutiliza </strong>
         </Typography>
         <IconButton onClick={() => navigate("/home")}>
-        <PlayArrowRoundedIcon sx={{color:"#52B788", fontSize:"3em", border:"2px solid #fff", borderRadius:"4em"}} />
+        <PlayArrowRoundedIcon className={styles.flecha} sx={{color:"#52B788", fontSize:"3em", border:"2px solid #fff", borderRadius:"4em"}} />
       </IconButton>
       </Box>
     </div>
